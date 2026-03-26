@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import RecipeCard from '../components/RecipeCard.astro';
+import { getCollection } from 'astro:content';
+
+const recetas = await getCollection('recetas');
+---
+
+<BaseLayout title="Indito — Recetas de Familia">
+  <Nav />
+  
+  <main>
+    <section class="hero">
+      <h1>Recetas de Mamá</h1>
+      <p>Sabores de la infancia, transmitidos de generación en generación. Las recetas que Olga cocinaba en casa.</p>
+    </section>
+
+    <section class="recipes-section">
+      <div class="container">
+        <h2 class="section-title">Recetas</h2>
+        <div class="recipes-grid">
+          {recetas.map((receta) => (
+            <RecipeCard
+              title={receta.data.title}
+              slug={receta.slug}
+              image={receta.data.image}
+              category={receta.data.category}
+              description={receta.data.description}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>

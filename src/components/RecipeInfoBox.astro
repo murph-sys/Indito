@@ -1,0 +1,29 @@
+---
+interface Props {
+  difficulty?: string | null;
+  prepTime?: string | null;
+  cookTime?: string | null;
+  servings?: number | null;
+}
+
+const { difficulty = '—', prepTime = '—', cookTime = '—', servings = null } = Astro.props;
+---
+
+<div class="recipe-info-box">
+  <div class="recipe-info-box__item">
+    <p class="recipe-info-box__label">Dificultad</p>
+    <p class="recipe-info-box__value">{difficulty || '—'}</p>
+  </div>
+  <div class="recipe-info-box__item">
+    <p class="recipe-info-box__label">Tiempo</p>
+    <p class="recipe-info-box__value">{prepTime || '—'}</p>
+  </div>
+  <div class="recipe-info-box__item">
+    <p class="recipe-info-box__label">Tiempo Activo</p>
+    <p class="recipe-info-box__value">{cookTime || '—'}</p>
+  </div>
+  <div class="recipe-info-box__item">
+    <p class="recipe-info-box__label">Cantidad</p>
+    <p class="recipe-info-box__value">{servings ? `${servings} personas` : '—'}</p>
+  </div>
+</div>

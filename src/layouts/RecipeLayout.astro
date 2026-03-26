@@ -1,0 +1,128 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import RecipeInfoBox from '../components/RecipeInfoBox.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  category: string;
+  image: string;
+  prepTime?: string;
+  cookTime?: string;
+  servings?: number;
+  difficulty?: string;
+}
+
+const { title, description, category, image, prepTime, cookTime, servings, difficulty } = Astro.props;
+---
+
+<BaseLayout title={`${title} | Indito`} description={description}>
+  <article class="recipe">
+    <header class="recipe-header">
+      <span class="category">{category}</span>
+      <h1>{title}</h1>
+      <p class="recipe-source">Receta de Olga</p>
+    </header>
+
+    <div class="recipe-image">
+      <img src={image} alt={title} />
+    </div>
+
+    <div class="container">
+      <RecipeInfoBox
+        difficulty={difficulty}
+        prepTime={prepTime}
+        cookTime={cookTime}
+        servings={servings}
+      />
+
+      <div class="recipe-content">
+        <slot />
+      </div>
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .recipe {
+    padding-top: 80px;
+  }
+
+  .recipe-header {
+    text-align: center;
+    padding: 60px 24px 40px;
+  }
+
+  .category {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-secondary);
+    margin-bottom: 16px;
+  }
+
+  .recipe-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+
+  .recipe-source {
+    font-size: 1rem;
+    color: var(--text-secondary);
+  }
+
+  .recipe-image {
+    max-width: 900px;
+    margin: 0 auto 60px;
+    padding: 0 24px;
+  }
+
+  .recipe-image img {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+  }
+
+  .recipe-content {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 24px 80px;
+  }
+
+  .recipe-content h2 {
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-secondary);
+    margin: 48px 0 24px;
+  }
+
+  .recipe-content h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 32px 0 16px;
+  }
+
+  .recipe-content ul {
+    list-style: none;
+  }
+
+  .recipe-content li {
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-primary);
+  }
+
+  .recipe-content li:last-child {
+    border-bottom: none;
+  }
+
+  .recipe-content p {
+    color: var(--text-primary);
+    line-height: 1.8;
+  }
+</style>

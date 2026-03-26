@@ -1,0 +1,21 @@
+---
+interface Props {
+  title: string;
+  slug: string;
+  image: string;
+  category: string;
+  description: string;
+}
+
+const { title, slug, image, category, description } = Astro.props;
+---
+
+<a href={`/recetas/${slug}`} class="recipe-card">
+  <div class="recipe-card__image-wrap">
+    <img src={image} alt={title} loading="lazy" />
+  </div>
+  <p class="recipe-card__category">{category}</p>
+  <h3 class="recipe-card__title">{title}</h3>
+  <p class="recipe-card__description">{description}</p>
+  <span class="recipe-card__link">Leer más →</span>
+</a>
