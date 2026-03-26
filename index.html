@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Indito — Recetas de Familia</title>
+  <meta name="description" content="Recetas de mamá y más. Recetas de familia colombianas transmitidas con amor." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Navegación principal">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">Indi<span>to</span></a>
+      <div class="nav__links">
+        <a href="#mama" class="nav__link">Recetas de Mamá</a>
+        <a href="#recetas" class="nav__link">Recetas</a>
+      </div>
+      <button class="nav__hamburger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="nav__overlay" aria-hidden="true"></div>
+  <div class="nav__mobile" role="dialog" aria-label="Menú móvil">
+    <div class="nav__mobile-links">
+      <a href="#mama" class="nav__mobile-link">Recetas de Mamá</a>
+      <a href="#recetas" class="nav__mobile-link">Recetas</a>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <header class="hero">
+    <img
+      class="hero__bg"
+      src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1400&q=80"
+      alt="Cocina colombiana"
+      loading="eager"
+    />
+    <div class="container hero__content">
+      <p class="hero__label">Bienvenidos</p>
+      <h1 class="hero__title">Recetas que saben<br>a casa</h1>
+      <p class="hero__subtitle">Las recetas de mi mamá y otras preparaciones que amo — todas con historia, todas con amor.</p>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Recent / Featured Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-header__eyebrow">Recientes</p>
+          <h2 class="section-header__title">Últimas recetas</h2>
+        </div>
+        <div class="cards-grid" id="recent-grid">
+          <!-- Cards injected by JS -->
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider container" />
+
+    <!-- Recetas de Mamá -->
+    <section class="section" id="mama">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-header__eyebrow">Recetas de Familia</p>
+          <h2 class="section-header__title">Recetas de Mamá</h2>
+          <p class="section-header__desc">Las recetas que mamita cocinaba en casa. Sabores de la infancia, transmitidos de generación en generación.</p>
+        </div>
+        <div class="cards-grid" id="mama-grid">
+          <!-- Cards injected by JS -->
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider container" />
+
+    <!-- Recetas -->
+    <section class="section" id="recetas">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-header__eyebrow">Otras Recetas</p>
+          <h2 class="section-header__title">Recetas</h2>
+          <p class="section-header__desc">Platos que he ido probando, adaptando y perfeccionando. De todo un poco, siempre con cariño.</p>
+        </div>
+        <div class="cards-grid" id="recetas-grid">
+          <!-- Cards injected by JS -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2024 <span>Indito</span> — Recetas con amor</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    /* Load recipes from JSON and render cards */
+    async function loadBlog() {
+      try {
+        const res = await fetch('data/recipes.json');
+        const data = await res.json();
+
+        const all = [...data.mama_recipes, ...data.other_recipes];
+        const recent = all.slice(0, 3);
+
+        renderGrid('#recent-grid', recent, false);
+        renderGrid('#mama-grid', data.mama_recipes, true);
+        renderGrid('#recetas-grid', data.other_recipes, false);
+      } catch (e) {
+        console.warn('Could not load recipes.json:', e);
+      }
+    }
+
+    function renderGrid(selector, recipes, showMama) {
+      const grid = document.querySelector(selector);
+      if (!grid) return;
+      grid.innerHTML = recipes.map(r => makeCard(r, showMama)).join('');
+    }
+
+    function makeCard(r) {
+      const image = r.image || 'https://images.unsplash.com/photo-1543353071-873f17a7a088?w=800&q=80';
+      const cat = r.category_display || r.category || 'receta';
+      const time = r.prepTime && r.cookTime
+        ? `${r.prepTime} + ${r.cookTime}`
+        : (r.prepTime || r.cookTime || '—');
+
+      return `
+      <article class="recipe-card">
+        <a href="recipes/${r.slug}.html" class="recipe-card__link" aria-label="Ver receta: ${r.name}">
+          <div class="recipe-card__image-wrap">
+            <img class="recipe-card__image" src="${image}" alt="${r.name}" loading="lazy" />
+            <span class="recipe-card__category">${cat}</span>
+            ${r.isMamaRecipe ? '<span class="recipe-card__mama-badge">Receta de Mamá</span>' : ''}
+          </div>
+          <div class="recipe-card__body">
+            <h3 class="recipe-card__title">${r.name}</h3>
+            <p class="recipe-card__desc">${r.description || ''}</p>
+            <div class="recipe-card__meta">
+              <span class="recipe-card__meta-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+                </svg>
+                ${time}
+              </span>
+              <span class="recipe-card__meta-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+                ${r.servings || '—'}
+              </span>
+            </div>
+          </div>
+        </a>
+      </article>`;
+    }
+
+    loadBlog();
+  </script>
+</body>
+</html>

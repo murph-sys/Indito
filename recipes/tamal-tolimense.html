@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tamal Tolimense — Indito</title>
+  <meta name="description" content="El tamal de mi mamá, envuelto en hoja de plátano y relleno de cerdo, papa y aceitunas. La receta que nunca fallaba en Navidad." />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a href="../index.html" class="nav__logo">Indi<span>to</span></a>
+      <div class="nav__links">
+        <a href="../index.html#mama" class="nav__link">Recetas de Mamá</a>
+        <a href="../index.html#recetas" class="nav__link">Recetas</a>
+      </div>
+      <button class="nav__hamburger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav__overlay" aria-hidden="true"></div>
+  <div class="nav__mobile">
+    <div class="nav__mobile-links">
+      <a href="../index.html#mama" class="nav__mobile-link">Recetas de Mamá</a>
+      <a href="../index.html#recetas" class="nav__mobile-link">Recetas</a>
+    </div>
+  </div>
+
+  <main class="recipe-page">
+
+    <header class="hero hero--recipe">
+      <img class="hero__bg" src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=1400&q=80" alt="Tamal Tolimense" loading="eager" />
+      <div class="hero__content">
+        <p class="recipe-breadcrumb">
+          <a href="../index.html">Inicio</a> / <a href="../index.html#mama">Recetas de Mamá</a> / Tamal
+        </p>
+        <h1 class="hero__title">Tamal Tolimense</h1>
+        <span class="recipe-mama-badge">Receta de Mamá</span>
+      </div>
+    </header>
+
+    <div class="recipe-meta">
+      <div class="recipe-meta__item">
+        <svg class="recipe-meta__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <span class="recipe-meta__value">2 hrs</span>
+        <span class="recipe-meta__label">Prep</span>
+      </div>
+      <div class="recipe-meta__item">
+        <svg class="recipe-meta__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/><path d="M8 12a4 4 0 0 1 8 0c0 3.31-2.69 6-6 6H9a3 3 0 0 1-3-3v-1a4 4 0 0 1 4-4"/></svg>
+        <span class="recipe-meta__value">3 hrs</span>
+        <span class="recipe-meta__label">Cocción</span>
+      </div>
+      <div class="recipe-meta__item">
+        <svg class="recipe-meta__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        <span class="recipe-meta__value">10 unidades</span>
+        <span class="recipe-meta__label">Porciones</span>
+      </div>
+      <div class="recipe-meta__item">
+        <svg class="recipe-meta__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 1.05-1.54 5 5 0 0 1 7.08 0A5.11 5.11 0 0 1 16.59 6 4 4 0 0 1 18 13.87V21H6z"/></svg>
+        <span class="recipe-meta__value">Alta</span>
+        <span class="recipe-meta__label">Dificultad</span>
+      </div>
+    </div>
+
+    <div class="recipe-content">
+
+      <aside class="recipe-sidebar" data-recipe-slug="tamal-tolimense">
+        <h2 class="recipe-sidebar__title">Ingredientes</h2>
+
+        <div class="ingredient-group">
+          <p class="ingredient-group__heading">Para la masa</p>
+          <ul>
+            <li class="ingredient-item" data-ingredient="arroz"><span class="ingredient-item__check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span>1 kg de arroz (lavado y remojado 2 horas)</span></li>
+            <li class="ingredient-item" data-ingredient="harina-maiz"><span class="ingredient-item__check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span>500 g de harina de maíz precocida</span></li>
+            <li class="ingredient-item" data-ingredient="caldo-cerdo"><span class="ingredient-item__check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span>El caldo de cocinar el cerdo</span></li>
+            <li class="ingredient-item" data-ingredient="manteca"><span class="ingredient-item__check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span>200 g de manteca de cerdo</span></li>
+            <li class="ingredient-item" data-ingredient="sal"><span class="ingredient-item__check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span>Sal al gusto</span></li>
+          </ul>
+        </div>
+
+        <div class="ingredient-group">
+          <p class="ingredient-group__heading">Para el relleno</p>
+          <ul>
+            <li class="ingredient-item" data-ingredient="cerdo"><span class="ingredient-item__check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span>800 g de carne de cerdo en trozos</span></li>
+            <li class="ingredient-item" data-ingredient="papas"><span class="ingredient-item__check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span>3 papas pastusas en cubos pequeños</span></li>
+            <li class="ingredient-item" data-ingredient="aceitunas"><span class="ingredient-item__check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span>100 g de aceitunas verdes sin hueso</span></li>
+            <li class="ingredient-item" data-ingredient="cebollas"><span class="ingredient-item__check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span>2 cebollas grandes finamente picadas</span></li>
+            <li class="ingredient-item" data-ingredient="ajo"><span class="ingredient-item__check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span>4 dientes de ajo molidos</span></li>
+            <li class="ingredient-item" data-ingredient="comino"><span class="ingredient-item__check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span>1 cucharadita de comino</span></li>
+            <li class="ingredient-item" data-ingredient="pimenton"><span class="ingredient-item__check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span>1 cucharadita de pimentón dulce</span></li>
+          </ul>
+        </div>
+
+        <div class="ingredient-group">
+          <p class="ingredient-group__heading">Para armar</p>
+          <ul>
+            <li class="ingredient-item" data-ingredient="hojas"><span class="ingredient-item__check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span>Hojas de plátano grandes, cortadas en rectángulos</span></li>
+            <li class="ingredient-item" data-ingredient="hilo"><span class="ingredient-item__check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span>Hilo para amarrar</span></li>
+          </ul>
+        </div>
+
+        <div class="recipe-tags">
+          <a href="#" class="recipe-tag">colombiano</a>
+          <a href="#" class="recipe-tag">tolima</a>
+          <a href="#" class="recipe-tag">cerdo</a>
+          <a href="#" class="recipe-tag">navidad</a>
+        </div>
+      </aside>
+
+      <section class="recipe-instructions">
+        <h2 class="recipe-instructions__title">Preparación</h2>
+
+        <div class="step">
+          <div class="step__header"><span class="step__number">1</span></div>
+          <p class="step__text">Cocina el cerdo en agua con sal, cebolla, ajo, comino y pimentón durante 1.5 horas hasta que esté tierno. Reserva el caldo. Deshuesa y desmenuza la carne.</p>
+        </div>
+
+        <div class="step">
+          <div class="step__header"><span class="step__number">2</span></div>
+          <p class="step__text">Sofríe la cebolla y el ajo en manteca hasta dorar. Añade las papas y cocina 10 minutos. Agrega la carne desmenuzada, las aceitunas y un poco del caldo. Cocina 15 minutos más. Reserva.</p>
+        </div>
+
+        <div class="step">
+          <div class="step__header"><span class="step__number">3</span></div>
+          <p class="step__text">Licúa el arroz remojado con un poco del caldo hasta obtener una masa líquida. Mezcla con la harina de maíz precocida y el resto del caldo. La consistencia debe ser como una masa espesa.</p>
+        </div>
+
+        <div class="step">
+          <div class="step__header"><span class="step__number">4</span></div>
+          <p class="step__text">Hierve las hojas de plátano 2 minutos para ablandarlas. Limpia y corta en rectángulos grandes.</p>
+        </div>
+
+        <div class="step">
+          <div class="step__header"><span class="step__number">5</span></div>
+          <p class="step__text">Coloca una hoja de plátano en tu mesa. Unta una capa gruesa de masa, coloca el relleno en el centro y cubre con más masa. Envuelve bien apretado formando un paquete rectangular.</p>
+        </div>
+
+        <div class="step">
+          <div class="step__header"><span class="step__number">6</span></div>
+          <p class="step__text">Amarra con hilo y cocina en agua hirviendo durante 2.5 a 3 horas. O hornea a 180°C por 2 horas.</p>
+        </div>
+
+        <div class="step">
+          <div class="step__header"><span class="step__number">7</span></div>
+          <p class="step__text">Sirve caliente, desatando el tamal directamente en el plato.</p>
+        </div>
+
+        <div class="step__tip">
+          <strong>El secreto de mamá:</strong> El tamal mejora si descansa una noche. Mamá siempre lo hacía la noche anterior a la celebración. El secreto es el moño bien apretado para que no entre agua.
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2024 <span>Indito</span> — Recetas con amor</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

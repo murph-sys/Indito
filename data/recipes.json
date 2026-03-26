@@ -1,0 +1,459 @@
+{
+  "mama_recipes": [
+    {
+      "slug": "ajiaco-bogotano",
+      "name": "Ajiaco Bogotano",
+      "description": "La sopa más representativa de Bogotá. Un-caldo espeso de tres tipos de papa, pollo y la legendaria guasca. Mamá lo hacía cada domingo sin falta.",
+      "category": "sopas",
+      "category_display": "Sopas",
+      "prepTime": "30 min",
+      "cookTime": "1.5 hrs",
+      "servings": 6,
+      "difficulty": "Media",
+      "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=800&q=80",
+      "tags": ["colombiano", "bogotano", "papa", "pollo", "sopa"],
+      "isMamaRecipe": true,
+      "ingredients": [
+        {
+          "section": "Para el caldo",
+          "items": [
+            "1 pollo entero, cortado en piezas (o 4 muslos y 4 pechugas)",
+            "2 litros de agua",
+            "2 ramas de cebolla larga",
+            "3 dientes de ajo",
+            "Sal al gusto"
+          ]
+        },
+        {
+          "section": "Para el ajiaco",
+          "items": [
+            "500 g de papa criolla (pelada y cortada en cubos)",
+            "500 g de papa pastusa (pelada y cortada en rodajas)",
+            "300 g de papa sabanera (pelada y cortada en cubos)",
+            "2 mazorcas de maíz, cortadas en rodajas",
+            "1 manojo de guasca fresca (las hojas, sin los tallos)",
+            "1 taza de crema de leche",
+            "1/2 taza de alcaparras (para decorar)"
+          ]
+        }
+      ],
+      "steps": [
+        "Coloca el pollo en una olla grande con el agua, la cebolla larga y el ajo. Lleva a hervir, reduce el fuego y cocina a fuego medio durante 45 minutos hasta que el pollo esté cocido. Retira el pollo, deshébralo y reserva el caldo.",
+        "Añade las papas al caldo: primero las pastusas y sabaneras (las que más tardan en ablandarse). Cocina 20 minutos a fuego medio.",
+        "Agrega la papa criolla y las mazorcas. Cocina 15 minutos más hasta que todo esté muy tierno.",
+        "Añade las hojas de guasca y licúa un poco de la sopa directamente en la olla (o tritura antes). Esto espesa el caldo y le da el color y sabor característico.",
+        "Agrega el pollo desmenuzado de vuelta a la olla. Rectifica sal.",
+        "Sirve caliente con una cucharada generosa de crema de leche encima y alcaparras por encima. Acompañar con arroz blanco y aguacate."
+      ],
+      "tips": "El secreto del ajiaco está en la guasca y en no cocinar las papas de más — deben estar blanditas pero no deshechas. Mamá siempre decía que el caldo debe estar tan espeso que la cuchara se sostenga sola."
+    },
+    {
+      "slug": "arepas-de-choclo",
+      "name": "Arepas de Choclo",
+      "description": "Las arepas más dulces y suaves que existen. Mamá las hacía con el choclo tierno de la plaza y las servía con queso mozzarella fundido por dentro.",
+      "category": "entradas",
+      "category_display": "Entradas",
+      "prepTime": "20 min",
+      "cookTime": "25 min",
+      "servings": 8,
+      "difficulty": "Fácil",
+      "image": "https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?w=800&q=80",
+      "tags": ["colombiano", "maíz", "desayuno", "arepa"],
+      "isMamaRecipe": true,
+      "ingredients": [
+        {
+          "section": null,
+          "items": [
+            "4 mazorcas de maíz tierno (o 3 tazas de granos de maíz)",
+            "1/2 taza de azúcar",
+            "1/4 taza de mantequilla a temperatura ambiente",
+            "1 huevo",
+            "1 taza de harina de maíz precocida",
+            "1 cucharadita de sal",
+            "200 g de mozzarella rallado (para el relleno)"
+          ]
+        }
+      ],
+      "steps": [
+        "Ralla los granos de maíz tierno con un rallador fino directamente sobre un bowl. Si usas licuadora, licúa apenas — no debe quedar puré liso, debe tener textura.",
+        "Añade el azúcar, la mantequilla, el huevo, la sal y mezcla bien.",
+        "Incorpora la harina de maíz poco a poco hasta obtener una masa que no se pegue en las manos. Debes poder formar bolitas.",
+        "Forma bolitas de masa, aplana en tu palma, coloca un poco de queso mozzarella en el centro y cierra formando la arepa.",
+        "Cocina en una arepaera o sartén a fuego medio-bajo, unsada con mantequilla. Cocina unos 5-7 minutos por lado hasta que estén doradas y el queso se haya fundido.",
+        "Sirve inmediatamente. Quedan mejores recién hechas."
+      ],
+      "tips": "El maíz debe ser bien tierno, de temporada si es posible. Mamá prefería rallarlo a mano para que quedara con trocitos, no como puré."
+    },
+    {
+      "slug": "changua",
+      "name": "Changua con Hierbabuena",
+      "description": "Sopa de leche con huevo y cebolla junca, el desayuno经典的 de la abuela. Tan simple y tan buena que no necesita más.",
+      "category": "sopas",
+      "category_display": "Sopas",
+      "prepTime": "5 min",
+      "cookTime": "15 min",
+      "servings": 4,
+      "difficulty": "Fácil",
+      "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=800&q=80",
+      "tags": ["colombiano", "sopa", "leche", "desayuno", "huevo"],
+      "isMamaRecipe": true,
+      "ingredients": [
+        {
+          "section": null,
+          "items": [
+            "4 tazas de leche",
+            "4 huevos",
+            "2 cebolla juncas (solo la parte blanca, finamente picadas)",
+            "1 manojo de hierbabuena fresca",
+            "Sal y pimienta al gusto",
+            "1 cucharada de mantequilla"
+          ]
+        }
+      ],
+      "steps": [
+        "Calienta la leche en una olla a fuego medio hasta que esté bien caliente pero sin hervir.",
+        "Añade la cebolla junca picada y la hierbabuena. Cocina 5 minutos para que infusionen los sabores.",
+        "Baja el fuego, añade la mantequilla y rompe los huevos directamente en la olla — intenta que no se rompan las claras demasiado. Si prefieres, puedes hervir los huevos primero y servirlos enteros.",
+        "Cocina a fuego bajo por 3-4 minutos hasta que las claras estén cocidas pero las yemas aún líquidas.",
+        "Sirve inmediatamente con pan hogaza para mojar en la sopa."
+      ],
+      "tips": "El secreto es no hervir la leche con los huevos — el fuego debe estar bajo para que los huevos se cocinen suavemente sin cortarse."
+    },
+    {
+      "slug": "tamal-tolimense",
+      "name": "Tamal Tolimense",
+      "description": "El tamal de mi mamá, envuelto en hoja de plátano y relleno de una mezcla perfecta de cerdo, papa y aceitunas. La receta que nunca fallaba en Navidad.",
+      "category": "platos_fuertes",
+      "category_display": "Platos Fuertes",
+      "prepTime": "2 hrs",
+      "cookTime": "3 hrs",
+      "servings": 10,
+      "difficulty": "Alta",
+      "image": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800&q=80",
+      "tags": ["colombiano", "tolima", "cerdo", "plátano", "navidad"],
+      "isMamaRecipe": true,
+      "ingredients": [
+        {
+          "section": "Para la masa",
+          "items": [
+            "1 kg de arroz (lavado y remojado 2 horas)",
+            "500 g de harina de maíz precocida",
+            "El caldo de cocinar el cerdo",
+            "200 g de manteca de cerdo",
+            "Sal al gusto"
+          ]
+        },
+        {
+          "section": "Para el relleno",
+          "items": [
+            "800 g de carne de cerdo en trozos (pierna o paleta)",
+            "3 papas pastusas en cubos pequeños",
+            "100 g de aceitunas verdes sin hueso",
+            "2 cebollas grandes finamente picadas",
+            "4 dientes de ajo molidos",
+            "1 cucharadita de comino",
+            "1 cucharadita de pimentón dulce",
+            "Sal y pimienta al gusto"
+          ]
+        },
+        {
+          "section": "Para armar",
+          "items": [
+            "Hojas de plátano grandes, cortadas en rectángulos",
+            "Hilo para amarrar"
+          ]
+        }
+      ],
+      "steps": [
+        "Cocina el cerdo en agua con sal, cebolla, ajo, comino y pimentón durante 1.5 horas hasta que esté tierno. Reserva el caldo. Deshuesa y desmenuza la carne.",
+        "Sofríe la cebolla y el ajo en manteca hasta dorar. Añade las papas y cocina 10 minutos. Agrega la carne desmenuzada, las aceitunas y un poco del caldo. Cocina 15 minutos más. Reserva.",
+        "Licúa el arroz remojado con un poco del caldo hasta obtener una masa líquida. Mezcla con la harina de maíz precocida y el resto del caldo. La consistencia debe ser como una masa espesa.",
+        "Hierve las hojas de plátano 2 minutos para ablandarlas. Limpia y corta en rectángulos grandes.",
+        "Coloca una hoja de plátano en tu mesa. Unta una capa gruesa de masa, coloca el relleno en el centro y cubre con más masa. Envuelve bien apretado formando un paquete rectangular.",
+        "Amarra con hilo y cocina en agua hirviendo durante 2.5 a 3 horas. O hornea a 180°C por 2 horas.",
+        "Sirve caliente, desatando el tamal directamente en el plato."
+      ],
+      "tips": "El tamal mejora si descansa una noche. Mamá siempre lo hacía la noche anterior a la celebración. El secreto es el moño bien apretado para que no entre agua."
+    },
+    {
+      "slug": "mazamorra-chiquita",
+      "name": "Mazamorra Chiquita con Bocado",
+      "description": "La mazamorra dechucla que mamita preparaba como merienda. Servida con leche,huevo cocido y arepa dequisada. Un abrazo en taza.",
+      "category": "postres",
+      "category_display": "Postres",
+      "prepTime": "5 min",
+      "cookTime": "30 min",
+      "servings": 4,
+      "difficulty": "Fácil",
+      "image": "https://images.unsplash.com/photo-1551024601-bec78aea704b?w=800&q=80",
+      "tags": ["colombiano", "postre", "maíz", "leche"],
+      "isMamaRecipe": true,
+      "ingredients": [
+        {
+          "section": null,
+          "items": [
+            "1 taza de maíz mote (granos de maíz maduros y duros)",
+            "4 tazas de agua",
+            "1/2 taza de azúcar (o más al gusto)",
+            "1 raja de canela",
+            "1 taza de leche",
+            "Huevo duro rodajado, para acompañar",
+            "Arepa dequisada, para acompañar"
+          ]
+        }
+      ],
+      "steps": [
+        "Lava el maíz mote y collo en una olla con el agua y la canela. Cocina a fuego bajo durante 25-30 minutos hasta que los granos estén muy blandos.",
+        "Añade el azúcar y mezcla bien. Si prefieres más líquido, agrega más agua.",
+        "Agrega la leche y cocina 5 minutos más. No dejes hervir fuertemente después de añadir la leche.",
+        "Sirve en tazas grandes con una rodaja de huevo duro y arepa dequisada al lado."
+      ],
+      "tips": "La mazamorra debe ser bien espesa pero aún líquida. Si queda muy sólida, agrega más agua o leche al servir."
+    },
+    {
+      "slug": "sancocho-trifasico",
+      "name": "Sancocho Trifásico",
+      "description": "Tres carnes en un solo sancocho: res, pollo y costilla de cerdo. El plato fuerte de los domingos con la familia.",
+      "category": "platos_fuertes",
+      "category_display": "Platos Fuertes",
+      "prepTime": "30 min",
+      "cookTime": "2.5 hrs",
+      "servings": 8,
+      "difficulty": "Media",
+      "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=800&q=80",
+      "tags": ["colombiano", "sancocho", "tres carnes", "domingo"],
+      "isMamaRecipe": true,
+      "ingredients": [
+        {
+          "section": null,
+          "items": [
+            "1 kg de costilla de res",
+            "500 g de pechuga de pollo",
+            "500 g de carne de res para guiso (pulpa)",
+            "3 litros de agua",
+            "4 yucas medianas, peladas y cortadas en trozos",
+            "3 mazorcas de maíz, cortadas en rodajas",
+            "2 cebolla juncas enteras",
+            "3 dientes de ajo",
+            "Sal y pimienta al gusto",
+            "Arroz blanco,aguacate y platano maduro frito, para acompañar"
+          ]
+        }
+      ],
+      "steps": [
+        "En una olla grande, cocina las costillas de res en agua con sal, cebolla y ajo durante 1 hora hasta que estén casi tiernas.",
+        "Añade la carne de res y cocina 40 minutos más.",
+        "Agrega el pollo y cocina 20 minutos hasta que esté cocido. Retira el pollo y desmenuza. Reserva.",
+        "Añade la yuca y el maíz. Cocina 20-25 minutos hasta que estén completamente tiernos.",
+        "Devuelve el pollo desmenuzado a la olla. Rectifica sal y pimienta.",
+        "Sirve en platos hondos con arroz blanco separado, aguacate y tajadas de plátano."
+      ],
+      "tips": "Mamá servía el sancocho con el caldo bien caldo y las carnes bien accompagnate. El secreto: no mezclas las verduras con el caldo hasta el final."
+    }
+  ],
+
+  "other_recipes": [
+    {
+      "slug": "pasta-carbonara",
+      "name": "Pasta Carbonara Romana",
+      "description": "La carbonara auténtica, sin crema. Solo huevos, queso pecorino, guanciale y pimienta negra. Un clásico que parece simple pero exige técnica.",
+      "category": "platos_fuertes",
+      "category_display": "Platos Fuertes",
+      "prepTime": "10 min",
+      "cookTime": "20 min",
+      "servings": 4,
+      "difficulty": "Media",
+      "image": "https://images.unsplash.com/photo-1612874742237-6526221588e3?w=800&q=80",
+      "tags": ["italiano", "pasta", "huevo", "cerdo"],
+      "isMamaRecipe": false,
+      "ingredients": [
+        {
+          "section": null,
+          "items": [
+            "400 g de spaghetti o rigatoni",
+            "200 g de guanciale (o pancetta, cortado en lardons)",
+            "4 yemas de huevo + 2 huevos enteros",
+            "100 g de pecorino romano rallado fino",
+            "100 g de parmesano rallado",
+            "Pimienta negra recién molida, generosa",
+            "Sal (solo para la pasta)"
+          ]
+        }
+      ],
+      "steps": [
+        "Hierve agua abundantemente con sal. Cocina la pasta hasta que esté al dente (unos 2 minutos menos de lo que diga el paquete). Reserva 1 taza de agua de cocción.",
+        "Mientras, cocina el guanciale en una sartén fría a fuego medio hasta que esté dorado y crujiente, unos 8 minutos. Retira del fuego.",
+        "En un bowl, mezcla las yemas, los huevos enteros, el pecorino, el parmesano y mucha pimienta negra.",
+        "Echa la pasta caliente directamente a la sartén con el guanciale (fuera del fuego). Mezcla bien.",
+        "Vierte la mezcla de huevos sobre la pasta y mezcla rápidamente, añadiendo agua de cocción pasta a pasta hasta lograr una salsa cremosa que cubra sin ser líquida.",
+        "Sirva inmediatamente con más queso rallado y pimienta negra."
+      ],
+      "tips": "La clave es temperatura: el fuego太强 quemará los huevos, sin fuego no se cocinarán. Fuera del fuego es el punto perfecto. El agua de cocción es lo que hace la salsa, no la crema."
+    },
+    {
+      "slug": "tacos-al-pastor",
+      "name": "Tacos al Pastor",
+      "description": "Tacos estilo México: cerdo marinado en adobo achiote y piña, asado hasta caramelizarse. El sabor más auténtico que puedes hacer en casa.",
+      "category": "platos_fuertes",
+      "category_display": "Platos Fuertes",
+      "prepTime": "30 min",
+      "cookTime": "1.5 hrs",
+      "servings": 6,
+      "difficulty": "Media",
+      "image": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800&q=80",
+      "tags": ["mexicano", "tacos", "cerdo", "achiote"],
+      "isMamaRecipe": false,
+      "ingredients": [
+        {
+          "section": "Para la marinada",
+          "items": [
+            "3 chiles guajillo, desvenados",
+            "2 chiles anchos, desvenados",
+            "1 chile chipotle",
+            "3 dientes de ajo",
+            "1 cebolla",
+            "2 cucharadas de achiote en pasta",
+            "1/2 taza de jugo de naranja",
+            "1/4 taza de vinagre blanco",
+            "1 cucharadita de comino",
+            "1 cucharadita de orégano",
+            "Sal al gusto"
+          ]
+        },
+        {
+          "section": "Para la carne",
+          "items": [
+            "1.5 kg de lomo de cerdo (o脖颈), en filetes finos",
+            "1/2 piña fresca, en rodajas"
+          ]
+        },
+        {
+          "section": "Para servir",
+          "items": [
+            "24 tortillas de maíz pequeñas",
+            "1/2 cebolla finamente picada",
+            "1 manojo de cilantro fresco",
+            "Salsa verde o roja al gusto",
+            "Limones en cuartos"
+          ]
+        }
+      ],
+      "steps": [
+        "Licúa todos los ingredientes de la marinada hasta obtener un adobo liso. Marine la carne en este adobo por mínimo 4 horas (o toda la noche en refrigeración).",
+        "Precalienta el horno a 200°C. Alternativamente, puedes cocinar en estufa a fuego medio.",
+        "Coloca la carne en una bandeja de horno, cúbrela con las rodajas de piña y hornea 1 a 1.5 horas hasta que esté bien cocida y caramelizada.",
+        "Retira y deja reposar 10 minutos. Corta la carne en trozos pequeños.",
+        "Calienta las tortillas directamente en la llama o en comal.",
+        "Arma los tacos con la carne, cebolla, cilantro y salsa. Exprime limón encima."
+      ],
+      "tips": "El adobo es sagrado: no escatimes en tiempo de marinación. Si tienes acceso a un horno de convection, úsalo — la piña se carameliza mejor."
+    },
+    {
+      "slug": "miso-ramen",
+      "name": "Miso Ramen",
+      "description": "Un bol de ramen con caldo dashi miso, huevo marinado y chashu de cerdo. No es rápido, pero cada paso vale la pena.",
+      "category": "sopas",
+      "category_display": "Sopas",
+      "prepTime": "45 min",
+      "cookTime": "4 hrs",
+      "servings": 4,
+      "difficulty": "Alta",
+      "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=800&q=80",
+      "tags": ["japonés", "ramen", "cerdo", "miso", "huevo"],
+      "isMamaRecipe": false,
+      "ingredients": [
+        {
+          "section": "Para el caldo (dashi miso)",
+          "items": [
+            "2 litros de agua",
+            "30 g de kombu (kelp seco)",
+            "30 g de katsuobushi (copos de bonito)",
+            "4 cucharadas de pasta miso blanco",
+            "2 cucharadas de pasta miso rojo",
+            "1 cucharada de salsa de soja",
+            "1 cucharada de mirin"
+          ]
+        },
+        {
+          "section": "Para el chashu",
+          "items": [
+            "600 g de panceta de cerdo en una pieza",
+            "100 ml de salsa de soja",
+            "100 ml de mirin",
+            "100 ml de sake",
+            "50 g de azúcar",
+            "300 ml de agua"
+          ]
+        },
+        {
+          "section": "Para los huevos marinados (ajitsuke tamago)",
+          "items": [
+            "4 huevos",
+            "100 ml de salsa de soja",
+            "100 ml de mirin",
+            "100 ml de agua"
+          ]
+        },
+        {
+          "section": "Para armar",
+          "items": [
+            "400 g de fideos ramen",
+            "2 cebolletas finamente picadas",
+            "1 hoja de nori por bowl",
+            "Maíz dulce (opcional)",
+            "Sésamo blanco"
+          ]
+        }
+      ],
+      "steps": [
+        "Hacer el chashu: sella la panceta en una olla caliente por todos lados. Añade la salsa de soja, mirin, sake, azúcar y agua. Cocina a fuego bajo 2.5 horas hasta que esté muy tierno. Deja enfriar en el líquido.",
+        "Hacer los huevos marinados: hierve los huevos 6.5 minutos exactos, sum载荷 en agua helada, pela. Mezcla la salsa de soja, mirin y agua. Marine los huevos mínimo 4 horas (o toda la noche). Cortar a la mitad al servir.",
+        "Hacer el dashi: remoja el kombu en agua fría 30 minutos. Calienta a fuego medio hasta que casi hierva. Retira el kombu, añade el katsuobushi, infusiona 5 minutos. Cuela.",
+        "Mezcla los dos misos con un poco de dashi caliente en un bowl. Añade el resto del dashi, la soja y el mirin.",
+        "Cocina los fideos según el paquete. Sirve en bowls.",
+        "Corta el chashu en rodajas y dora ligeramente. Coloca encima del ramen con los huevos, cebolletas, nori y sésamo."
+      ],
+      "tips": "El ramen se trata de capas de sabor. No te saltes el chashu — es lo que convierte un ramen decente en uno inolvidable. El huevo marino es lo primero que desaparece del bowl."
+    },
+    {
+      "slug": "brownies-fudgy",
+      "name": "Brownies Fudgy con Sal Marina",
+      "description": "Brownies ultrapesados, casi como fudge sólido. crosta crujiente por fuera, centro que no Terminado de solidify. Con sal marina en grumos por encima.",
+      "category": "postres",
+      "category_display": "Postres",
+      "prepTime": "15 min",
+      "cookTime": "30 min",
+      "servings": 16,
+      "difficulty": "Fácil",
+      "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=800&q=80",
+      "tags": ["postre", "chocolate", "brownie", "fudge"],
+      "isMamaRecipe": false,
+      "ingredients": [
+        {
+          "section": null,
+          "items": [
+            "200 g de chocolate oscuro (70% cacao), picado",
+            "170 g de mantequilla sin sal",
+            "200 g de azúcar",
+            "3 huevos grandes",
+            "1 cucharadita de extracto de vainilla",
+            "90 g de harina común",
+            "1/4 cucharadita de sal",
+            "Flores de sal marina o escamas de sal por encima"
+          ]
+        }
+      ],
+      "steps": [
+        "Precalienta el horno a 175°C. Forra un molde cuadrado de 20x20 cm con papel sulfurizado.",
+        "Derrite el chocolate y la mantequilla juntos al baño maría o en el microondas en intervalos de 30 segundos. Deja enfriar un poco.",
+        "Bate los huevos con el azúcar hasta que estén pálidos y hayan aumentado un poco de volumen, unos 3 minutos.",
+        "Añade la vainilla a la mezcla de chocolate. Vierte sobre los huevos y mezcla suavemente.",
+        "Incorpora la harina y la sal con una espátula, solo hasta que se integren. No batas de más.",
+        "Vierte la masa en el molde. Espolvorea generosamente con sal marina.",
+        "Hornea 25-30 minutos. El centro aún debe temblar un poco cuando muevas el molde. No hornees de más.",
+        "Deja enfriar completamente antes de cortar en cuadrados. Si puedes, espera 2 horas — mejoran mucho fríos."
+      ],
+      "tips": "La clave del brownie fudgy es no hornear de más. Sal del horno cuando el centro todavía se mueve. El contraste sal marina + chocolate es non-negociable."
+    }
+  ]
+}
