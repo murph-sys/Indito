@@ -8,18 +8,22 @@ import { getCollection } from 'astro:content';
 const recetas = await getCollection('recetas');
 ---
 
-<BaseLayout title="Indito — Recetas de Familia">
+<BaseLayout title="Indito — Recetas de Olga">
   <Nav />
   
   <main>
     <section class="hero">
-      <h1>Recetas de Mamá</h1>
-      <p>Sabores de la infancia, transmitidos de generación en generación. Las recetas que Olga cocinaba en casa.</p>
+      <span class="hero__label">Recetas de familia</span>
+      <h1>Las recetas<br />de mamá</h1>
+      <p class="hero__subtitle">Sabores de la infancia transmitidos de generación en generación. Las recetas que Olga cocinaba en casa.</p>
     </section>
 
     <section class="recipes-section">
       <div class="container">
-        <h2 class="section-title">Recetas</h2>
+        <div class="recipes-section__header">
+          <h2 class="section-title">Recetas</h2>
+          <span class="section-count">{recetas.length} receta{recetas.length !== 1 ? 's' : ''}</span>
+        </div>
         <div class="recipes-grid">
           {recetas.map((receta) => (
             <RecipeCard
