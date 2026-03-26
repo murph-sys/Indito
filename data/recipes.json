@@ -211,6 +211,47 @@
       "tips": "La mazamorra debe ser bien espesa pero aún líquida. Si queda muy sólida, agrega más agua o leche al servir."
     },
     {
+      "slug": "pasta-tomate-seco",
+      "name": "Pasta con Tomate Seco",
+      "description": "Pasta en salsa cremosa con tomate seco, albahaca y vino blanco. Receta de Olga (mamá de Carlos).",
+      "category": "platos_fuertes",
+      "category_display": "Platos Fuertes",
+      "prepTime": "Pendiente",
+      "cookTime": "Pendiente",
+      "servings": null,
+      "difficulty": null,
+      "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=800&q=80",
+      "tags": ["pasta", "tomate seco", "cremosa", "mamá"],
+      "isMamaRecipe": true,
+      "ingredients": [
+        {
+          "section": "Para la salsa",
+          "items": [
+            "Tomate seco (cantidad pendiente)",
+            "Crema de leche (cantidad pendiente)",
+            "Mantequilla (cantidad pendiente)",
+            "Airehaca (cantidad pendiente)",
+            "Vino blanco (cantidad pendiente)",
+            "Leche entera (cantidad pendiente)",
+            "Harina de trigo (cantidad pendiente)",
+            "Cebolla cabezona blanca (cantidad pendiente)",
+            "Pimentón (cantidad pendiente)",
+            "Ajo (cantidad pendiente)"
+          ]
+        },
+        {
+          "section": "Para la pasta",
+          "items": [
+            "Pasta (cantidad pendiente)"
+          ]
+        }
+      ],
+      "steps": [
+        "Pendiente de cantidades."
+      ],
+      "tips": "Esta receta está pendiente de las cantidades exactas de Olga."
+    },
+    {
       "slug": "sancocho-trifasico",
       "name": "Sancocho Trifásico",
       "description": "Tres carnes en un solo sancocho: res, pollo y costilla de cerdo. El plato fuerte de los domingos con la familia.",
