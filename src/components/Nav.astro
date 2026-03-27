@@ -1,0 +1,19 @@
+---
+const base = import.meta.env.BASE_URL;
+---
+<nav class="nav">
+  <div class="container nav__inner">
+    <a href={base} class="nav__logo">indito</a>
+    <div class="nav__links">
+      <a href={`${base}#recetas`} class="nav__link">Recetas</a>
+    </div>
+    <button class="nav__hamburger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</nav>
+<div class="nav__drawer" id="nav-drawer">
+  <a href={`${base}#recetas`}>Recetas</a>
+</div>

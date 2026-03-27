@@ -1,0 +1,87 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+import RecipeInfoBox from '../../components/RecipeInfoBox.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const recetas = await getCollection('recetas');
+  return recetas.map((receta) => ({
+    params: { slug: receta.slug },
+    props: { receta },
+  }));
+}
+
+const { receta } = Astro.props;
+const { data, render } = receta;
+const { Content } = await render();
+---
+<BaseLayout title={data.title} description={data.description}>
+  <Nav />
+
+  <!-- Recipe Header -->
+  <div class="recipe-header">
+    <div class="recipe-header__tags">
+      <span class="recipe-header__tag">{data.category}</span>
+    </div>
+    <h1 class="recipe-header__title">{data.title}</h1>
+    {data.author && (
+      <p class="recipe-header__author">Receta de {data.author}</p>
+    )}
+  </div>
+
+  <!-- Recipe Image -->
+  <div class="recipe-image">
+    <img src={data.image} alt={data.title} loading="eager" />
+  </div>
+
+  <!-- Info Box -->
+  <RecipeInfoBox
+    prepTime={data.prepTime}
+    cookTime={data.cookTime}
+    servings={data.servings}
+    difficulty={data.difficulty}
+  />
+
+  <!-- Body -->
+  <div class="recipe-body">
+
+    <!-- Ingredients -->
+    <section class="recipe-section">
+      <h2 class="recipe-section__title">Ingredientes</h2>
+      {data.ingredients.map((group) => (
+        <div class="ingredient-group">
+          <h4>{group.section}</h4>
+          <ul class="ingredient-list">
+            {group.items.map((item) => (
+              <li>{item}</li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </section>
+
+    <!-- Method -->
+    <section class="recipe-section">
+      <h2 class="recipe-section__title">Método</h2>
+      <div class="method-steps">
+        <div class="method-note">
+          <Content />
+        </div>
+      </div>
+    </section>
+
+    <!-- Tags -->
+    {data.tags && data.tags.length > 0 && (
+      <div class="recipe-tags">
+        {data.tags.map((tag) => (
+          <span class="recipe-tag">{tag}</span>
+        ))}
+      </div>
+    )}
+
+  </div>
+
+  <Footer />
+</BaseLayout>

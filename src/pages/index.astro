@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import RecipeCard from '../components/RecipeCard.astro';
+import { getCollection } from 'astro:content';
+
+const recetas = await getCollection('recetas');
+---
+<BaseLayout title="Inicio" description="Recetas de Mamá — las preparaciones de Olga, con historia y con amor.">
+  <Nav />
+
+  <!-- Hero -->
+  <section class="hero">
+    <p class="hero__eyebrow">Un blog de recetas</p>
+    <h1 class="hero__title"><em>Recetas de Mamá</em></h1>
+    <p class="hero__subtitle">
+      Las preparaciones de Olga — recetas colombianas con historia,
+      hechas con amor y perfectas tal como son.
+    </p>
+  </section>
+
+  <!-- Recipes -->
+  <section class="recipes-section" id="recetas">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Recetas</span>
+      </div>
+      <div class="recipes-grid">
+        {recetas.map((receta) => (
+          <RecipeCard
+            title={receta.data.title}
+            slug={receta.slug}
+            image={receta.data.image}
+            category={receta.data.category}
+            description={receta.data.description}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</BaseLayout>

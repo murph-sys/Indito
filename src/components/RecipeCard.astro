@@ -1,0 +1,25 @@
+---
+interface Props {
+  title: string;
+  slug: string;
+  image: string;
+  category: string;
+  description: string;
+}
+
+const { title, slug, image, category, description } = Astro.props;
+const base = import.meta.env.BASE_URL;
+---
+<article class="recipe-card">
+  <a href={`${base}recetas/${slug}`}>
+    <div class="recipe-card__image-wrap">
+      <img src={image} alt={title} loading="lazy" />
+    </div>
+    <div class="recipe-card__body">
+      <span class="recipe-card__category">{category}</span>
+      <h3 class="recipe-card__title">{title}</h3>
+      <p class="recipe-card__desc">{description}</p>
+      <span class="recipe-card__readmore">Leer más →</span>
+    </div>
+  </a>
+</article>
