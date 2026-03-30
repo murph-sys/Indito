@@ -12,8 +12,8 @@
   --bg:              #FFFFFF;
   --bg-subtle:       #FAFAF9;
   --text-primary:    #161412;
-  --text-secondary:  #706B66;
-  --text-tertiary:   #A09A94;
+  --text-secondary:  #5A5550;
+  --text-tertiary:   #7A756F;
   --border:          #E8E4DF;
   --border-strong:   #C8C2BB;
   --tag-bg:          #F3F0EC;
@@ -25,7 +25,7 @@
 
   --max-width:       1140px;
   --container-px:    24px;
-  --nav-height:      64px;
+  --nav-height:      72px;
 
   --transition-base: 200ms ease;
 }
@@ -37,8 +37,8 @@ html {
 
 body {
   font-family: var(--font-body);
-  font-size: 16px;
-  line-height: 1.65;
+  font-size: 18px;
+  line-height: 1.75;
   color: var(--text-primary);
   background-color: var(--bg);
   -webkit-font-smoothing: antialiased;
@@ -88,7 +88,7 @@ a {
   font-family: var(--font-display);
   font-style: italic;
   font-weight: 400;
-  font-size: 1.625rem;
+  font-size: 1.75rem;
   letter-spacing: -0.01em;
   color: var(--text-primary);
   line-height: 1;
@@ -102,7 +102,7 @@ a {
 
 .nav__link {
   font-family: var(--font-body);
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
   font-weight: 400;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -166,11 +166,11 @@ a {
 
 .nav__drawer a {
   display: block;
-  font-size: 0.8125rem;
+  font-size: 0.9375rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--text-secondary);
-  padding: 0.75rem 0;
+  padding: 1rem 0;
   border-bottom: 1px solid var(--border);
 }
 
@@ -196,7 +196,7 @@ a {
 
 .hero__eyebrow {
   font-family: var(--font-body);
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -220,12 +220,12 @@ a {
 
 .hero__subtitle {
   font-family: var(--font-body);
-  font-size: 1rem;
+  font-size: 1.125rem;
   font-weight: 300;
   color: var(--text-secondary);
   max-width: 42ch;
   margin-inline: auto;
-  line-height: 1.8;
+  line-height: 1.85;
 }
 
 /* ─── Recipes Section ────────────────────────────────────── */
@@ -244,7 +244,7 @@ a {
 
 .section-label {
   font-family: var(--font-body);
-  font-size: 0.6875rem;
+  font-size: 0.8125rem;
   font-weight: 500;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -297,7 +297,7 @@ a {
 
 .recipe-card__category {
   font-family: var(--font-body);
-  font-size: 0.6875rem;
+  font-size: 0.8125rem;
   font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -307,8 +307,8 @@ a {
 .recipe-card__title {
   font-family: var(--font-display);
   font-weight: 500;
-  font-size: 1.5rem;
-  line-height: 1.2;
+  font-size: 1.625rem;
+  line-height: 1.25;
   letter-spacing: -0.01em;
   color: var(--text-primary);
   margin-top: 0.125rem;
@@ -316,10 +316,10 @@ a {
 
 .recipe-card__desc {
   font-family: var(--font-body);
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 300;
   color: var(--text-secondary);
-  line-height: 1.65;
+  line-height: 1.75;
   margin-top: 0.25rem;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -329,7 +329,7 @@ a {
 
 .recipe-card__readmore {
   font-family: var(--font-body);
-  font-size: 0.8125rem;
+  font-size: 0.9375rem;
   font-weight: 400;
   color: var(--text-tertiary);
   margin-top: 0.875rem;
@@ -362,7 +362,7 @@ a {
 
 .recipe-header__tag {
   font-family: var(--font-body);
-  font-size: 0.6875rem;
+  font-size: 0.8125rem;
   font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -372,7 +372,7 @@ a {
 .recipe-header__title {
   font-family: var(--font-display);
   font-weight: 400;
-  font-size: clamp(2.25rem, 5vw, 3.75rem);
+  font-size: clamp(2.5rem, 5.5vw, 4rem);
   line-height: 1.1;
   letter-spacing: -0.02em;
   color: var(--text-primary);
@@ -383,7 +383,7 @@ a {
   font-family: var(--font-display);
   font-style: italic;
   font-weight: 300;
-  font-size: 1.0625rem;
+  font-size: 1.1875rem;
   color: var(--text-secondary);
 }
 
@@ -432,7 +432,7 @@ a {
 
 .recipe-info__label {
   font-family: var(--font-body);
-  font-size: 0.625rem;
+  font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -443,7 +443,7 @@ a {
 .recipe-info__value {
   font-family: var(--font-display);
   font-weight: 400;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   color: var(--text-primary);
 }
 
@@ -470,7 +470,7 @@ a {
 
 .recipe-section__title {
   font-family: var(--font-body);
-  font-size: 0.6875rem;
+  font-size: 0.8125rem;
   font-weight: 500;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -488,9 +488,9 @@ a {
   font-family: var(--font-display);
   font-style: italic;
   font-weight: 400;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   color: var(--text-secondary);
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
 }
 
 .ingredient-list {
@@ -502,12 +502,12 @@ a {
 
 .ingredient-list li {
   font-family: var(--font-body);
-  font-size: 0.9375rem;
-  font-weight: 300;
+  font-size: 1.0625rem;
+  font-weight: 400;
   color: var(--text-primary);
-  padding: 0.5rem 0;
+  padding: 0.75rem 0;
   border-bottom: 1px solid var(--border);
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .ingredient-list li:last-child {
@@ -523,11 +523,11 @@ a {
 
 .method-note {
   font-family: var(--font-body);
-  font-size: 0.9375rem;
-  font-weight: 300;
+  font-size: 1.0625rem;
+  font-weight: 400;
   color: var(--text-secondary);
-  line-height: 1.8;
-  padding: 1.25rem 1.5rem;
+  line-height: 1.85;
+  padding: 1.5rem 1.75rem;
   border-left: 2px solid var(--border-strong);
   background: var(--bg-subtle);
 }
@@ -550,12 +550,12 @@ a {
 .recipe-tag {
   display: inline-block;
   font-family: var(--font-body);
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   font-weight: 400;
   letter-spacing: 0.04em;
   color: var(--tag-text);
   background: var(--tag-bg);
-  padding: 0.3rem 0.75rem;
+  padding: 0.375rem 0.875rem;
   border-radius: 2px;
 }
 
@@ -568,7 +568,56 @@ a {
 
 .footer p {
   font-family: var(--font-body);
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
   font-weight: 300;
   color: var(--text-tertiary);
+}
+
+/* ─── Category Filter ────────────────────────────────────── */
+.category-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.category-filter__btn {
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  background: none;
+  border: 1px solid var(--border);
+  padding: 0.4rem 1rem;
+  cursor: pointer;
+  transition: color var(--transition-base), border-color var(--transition-base);
+  border-radius: 2px;
+}
+
+.category-filter__btn:hover {
+  color: var(--text-primary);
+  border-color: var(--border-strong);
+}
+
+.category-filter__btn.active {
+  color: var(--text-primary);
+  border-color: var(--text-primary);
+}
+
+.recipes-grid [data-category].hidden {
+  display: none;
+}
+
+/* ─── Mobile Overrides ───────────────────────────────────── */
+@media (max-width: 640px) {
+  body {
+    font-size: 17px;
+  }
+
+  .ingredient-list li {
+    font-size: 1rem;
+    padding: 0.625rem 0;
+  }
 }

@@ -6,6 +6,19 @@ import RecipeCard from '../components/RecipeCard.astro';
 import { getCollection } from 'astro:content';
 
 const recetas = await getCollection('recetas');
+
+const categoryOrder = [
+  'Desayunos',
+  'Sopas y Caldos',
+  'Platos Fuertes',
+  'Ensaladas y Bowls',
+  'Preparaciones Base',
+  'Snacks y Bebidas',
+];
+
+const categorias = categoryOrder.filter(cat =>
+  recetas.some(r => r.data.category === cat)
+);
 ---
 <BaseLayout title="Inicio" description="Recetas de Mamá — las preparaciones de Olga, con historia y con amor.">
   <Nav />
@@ -26,15 +39,26 @@ const recetas = await getCollection('recetas');
       <div class="section-header">
         <span class="section-label">Recetas</span>
       </div>
+
+      <!-- Category filter -->
+      <div class="category-filter" id="category-filter">
+        <button class="category-filter__btn active" data-filter="todas">Todas</button>
+        {categorias.map(cat => (
+          <button class="category-filter__btn" data-filter={cat}>{cat}</button>
+        ))}
+      </div>
+
       <div class="recipes-grid">
         {recetas.map((receta) => (
-          <RecipeCard
-            title={receta.data.title}
-            slug={receta.slug}
-            image={receta.data.image}
-            category={receta.data.category}
-            description={receta.data.description}
-          />
+          <div data-category={receta.data.category}>
+            <RecipeCard
+              title={receta.data.title}
+              slug={receta.slug}
+              image={receta.data.image}
+              category={receta.data.category}
+              description={receta.data.description}
+            />
+          </div>
         ))}
       </div>
     </div>
@@ -42,3 +66,25 @@ const recetas = await getCollection('recetas');
 
   <Footer />
 </BaseLayout>
+
+<script>
+  const filter = document.getElementById('category-filter');
+  const cards = document.querySelectorAll('.recipes-grid [data-category]');
+
+  filter?.addEventListener('click', (e) => {
+    const btn = (e.target as HTMLElement).closest('button[data-filter]') as HTMLButtonElement | null;
+    if (!btn) return;
+
+    filter.querySelectorAll('.category-filter__btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    const selected = btn.dataset.filter;
+    cards.forEach(card => {
+      if (selected === 'todas' || (card as HTMLElement).dataset.category === selected) {
+        card.classList.remove('hidden');
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+  });
+</script>
